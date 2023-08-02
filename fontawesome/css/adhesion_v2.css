@@ -129,7 +129,11 @@ button:hover::before {
       font-size: large;
   }
 
-  .pourquoi-devenir-bn,
+   .bn {
+    display: block;
+    text-align: center;
+  }
+    
   .image-6 {
       width: 100%; 
   }
