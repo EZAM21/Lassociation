@@ -1,0 +1,157 @@
+
+.benevole{
+  background-image: url('../benevole.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+  
+.je-deviens-benevole {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+  background-color: rgba(0,0,0,0.5);
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0px 10px 40px rgba(0,0,0,0.8) ;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.8) ;
+
+}
+
+.pourquoi-devenir-bn{
+  color: #ff0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: 16.0px;
+  margin-top: 41px;
+  min-height: 19px;
+  text-align: center;
+  width: 1000px;
+}
+
+.vous-avez-envie-de-v {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px 6px 1px; /* Modifié la duplication des propriétés de margin en une seule */
+  min-height: 95px;
+  max-width: 1044px; /* Modifié width en max-width */
+}       
+
+.img_ben{
+  object-fit: cover;
+  width: 60%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+button {
+  align-content: space-between;
+  width: 20%;
+  height: 40px;
+  background-color: red;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  right: 0;
+  position: relative;
+  margin-bottom: 40px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+button:hover {
+  color: white;
+}
+
+button:nth-child(2) {
+  background: transparent;
+  color: red;
+}
+
+button:nth-child(2):hover {
+  color:black;
+  height: 40px;
+}
+
+button:nth-child(2)::before {
+  background-color: red;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: .5s;
+
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+  @media screen and (max-width: 760px) {
+    body {
+      display: block;
+    }
+
+  .benevole {
+      height: 400px;
+  }
+
+  .je-deviens-benevole {
+      font-size: large;
+  }
+
+  .pourquoi-devenir-bn,
+  .image-6 {
+      width: 100%; 
+  }
+
+  .vous-avez-envie-de-v {
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+
+  article {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  button {
+          width: 80%;
+  }
+
+}
